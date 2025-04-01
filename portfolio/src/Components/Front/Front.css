@@ -1,0 +1,58 @@
+.front{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.front img{
+    margin-top: 7px;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 2px solid #2d0b53;
+}
+
+.front h1{
+    text-align: center;
+    width: 70%;
+    font-size: 30px;
+    font-weight: 450;
+}
+.front h3{
+    background: linear-gradient(270deg, #cc0202 0.16%, #2d0b53 75.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.front p{
+    width: 60%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+}
+.front-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.front-connect{
+    padding: 12px 15px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #cc0202 0.16%, #2d0b53 75.06%);
+    cursor: pointer;
+}
+.front-resume{
+    padding: 12px 35px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.front-connect:hover{
+    border: 2px solid white;
+}
+.front-resume:hover{
+    border-color:#2d0b53;
+}
