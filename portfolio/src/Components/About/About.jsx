@@ -48,7 +48,7 @@ const About = () => {
             <hr/>
             <div className="about-qualification">
                 <h1>Database languages</h1>
-                <p>MySQL, MongoDB, Firebase</p>
+                <p>MySQL, MongoDB, PostgreSQL, Firebase</p>
             </div>
             <hr/>
             <div className="about-qualification">
@@ -58,7 +58,7 @@ const About = () => {
             <hr/>
             <div className="about-qualification">
                 <h1>Mobile app development</h1>
-                <p>React native, Kotlin</p>
+                <p>Android, React native</p>
             </div>
             <hr/>
             <div className="about-qualification">
