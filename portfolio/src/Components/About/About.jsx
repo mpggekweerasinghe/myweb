@@ -6,7 +6,7 @@ import profile from '../../assets/dp.png'
 const About = () => {
   return (
     <div className='about'>
-        <div className="about--title">
+        <div className="about-title">
             <h1>About me</h1>
             <img src={theme} alt=''/>
         </div>
@@ -38,6 +38,32 @@ const About = () => {
                         <p>Next JS</p><hr style={{width:"50%"}}/>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div className="about-qualifications">
+            <div className="about-qualification">
+                <h1>Programing languages</h1>
+                <p>Java, C, Python</p>
+            </div>
+            <hr/>
+            <div className="about-qualification">
+                <h1>Database languages</h1>
+                <p>MySQL, MongoDB, Firebase</p>
+            </div>
+            <hr/>
+            <div className="about-qualification">
+                <h1>Web development</h1>
+                <p>HTML, CSS, PHP</p>
+            </div>
+            <hr/>
+            <div className="about-qualification">
+                <h1>Mobile app development</h1>
+                <p>React native, Kotlin</p>
+            </div>
+            <hr/>
+            <div className="about-qualification">
+                <h1>Data science</h1>
+                <p>R language</p>
             </div>
         </div>
     </div>
