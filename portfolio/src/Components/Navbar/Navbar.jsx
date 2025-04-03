@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './Navbar.css';
 import logo from '../../assets/theme.png';
 import underline from '../../assets/underline.png';
@@ -7,33 +7,45 @@ import menuclose from '../../assets/menuclose.png';
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
+  const menuRef = useRef(null);
+
+  const openMenu = () => {
+    menuRef.current.style.right = '0';
+  };
+
+  const closeMenu = () => {
+    menuRef.current.style.right = '-350px';
+  };
 
   return (
     <div className="navbar">
-      <img src={logo} alt="Logo" />
-      <img src={menue} alt="" />
-      <ul className="nav-menu">
-        <img src={menuclose} alt="" className="nav-mob-close" />
+      <img src={logo} alt="Logo" className='logo'/>
+      <img src={menue} onClick={openMenu} alt="menu" className='nav-mob-open' />
+      
+      <ul ref={menuRef} className="nav-menu">
+        <img src={menuclose} onClick={closeMenu} alt="close" className="nav-mob-close" />
         <li onClick={() => setMenu("home")}>
-          <a href="#home">Home</a> {menu === "home" && <img src={underline} alt="underline" />}
+          <a href="#home">Home</a> {menu === "home" && <img src={underline} alt="underline" className='underline'/>}
         </li>
         <li onClick={() => setMenu("about")}>
-          <a href="#about">About Me</a> {menu === "about" && <img src={underline} alt="underline" />}
+          <a href="#about">About Me</a> {menu === "about" && <img src={underline} alt="underline" className='underline'/>}
         </li>
         <li onClick={() => setMenu("services")}>
-          <a href="#services">Services</a> {menu === "services" && <img src={underline} alt="underline" />}
+          <a href="#services">Services</a> {menu === "services" && <img src={underline} alt="underline" className='underline'/>}
         </li>
         <li onClick={() => setMenu("work")}>
-          <a href="#work">Portfolio</a> {menu === "work" && <img src={underline} alt="underline" />}
+          <a href="#work">Portfolio</a> {menu === "work" && <img src={underline} alt="underline" className='underline'/>}
         </li>
         <li onClick={() => setMenu("contact")}>
-          <a href="#contact">Contact</a> {menu === "contact" && <img src={underline} alt="underline" />}
+          <a href="#contact">Contact</a> {menu === "contact" && <img src={underline} alt="underline" className='underline'/>}
         </li>
       </ul>
+
       <div className="nav-connect"><a href="#contact">Connect with me</a></div>
     </div>
   );
 };
 
 export default Navbar;
+
 

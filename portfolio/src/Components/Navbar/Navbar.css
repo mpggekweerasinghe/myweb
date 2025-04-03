@@ -1,17 +1,19 @@
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 20px 100px;
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 50px;
     font-size: 17px;
 }
-.nav-connect{
+
+.nav-connect {
     padding: 12px 15px;
     border-radius: 50px;
     background: linear-gradient(267deg, #cc0202 0.16%, #2d0b53 75.06%);
@@ -19,17 +21,18 @@
     cursor: pointer;
     transition: 0.5s;
 }
-.nav-connect:hover{
+
+.nav-connect:hover {
     transform: scale(1.05);
 }
-.navbar img{
+
+.logo {
     width: 80px;
     height: 80px;
     border-radius: 100%;
-
-  
 }
-.nav-menu img{
+
+.underline {
     position: absolute;
     z-index: -1;
     margin-top: 2px;
@@ -37,13 +40,71 @@
     height: 50px;
     border-radius: 50%;
 }
-.nav-menu li{
+
+.nav-menu li {
     display: flex;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
+}
+
+.nav-mob-close {
+    display: none;
+}
+.nav-mob-open{
+    display: none;
+}
+
+/* -------- Mobile View (Max Width: 768px) -------- */
+@media (max-width: 768px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+
+    .nav-connect {
+        display: none;
+    }
+
+    .nav-mob-open {
+        display: block;
+        position: fixed;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .nav-menu {
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        background-color: #2d0b53;
+        width: 250px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s ease-in-out;
+        right: -350px;
+        padding-left: 50px;
+        padding-top: 130px;
+        gap: 50px;
+        font-size: 20px;
+        opacity: 0.9;
+    }
+
+    .nav-mob-close {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        border-radius: 100%;
+    }
 }
