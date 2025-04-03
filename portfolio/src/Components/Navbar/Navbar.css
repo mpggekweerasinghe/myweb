@@ -29,3 +29,21 @@
 
   
 }
+.nav-menu img{
+    position: absolute;
+    z-index: -1;
+    margin-top: 2px;
+    width: 115px;
+    height: 50px;
+    border-radius: 50%;
+}
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

@@ -4,7 +4,7 @@ import dp from '../../assets/dp.png'
 
 const Front = () => {
   return (
-    <div className='front'>
+    <div id='home' className='front'>
         <img src={dp} alt=''/>
       <h1><span>"I'm Gayani Weerasinghe, Welcome to my portfolio! "</span></h1>
       <h3>Front-end Developer | Backend Developer | UI/UX Designer</h3>
@@ -13,7 +13,7 @@ const Front = () => {
         mobile applications. Constantly exploring new technologies, I strive to craft efficient, 
         user-friendly, and scalable solutions.</p>
         <div className="front-action">
-            <div className="front-connect">Connect with me</div>
+            <div className="front-connect"><a href="#contact">Connect with me</a></div>
             <div className="front-resume">My resume</div>
         </div>
     </div>
