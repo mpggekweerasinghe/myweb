@@ -70,3 +70,17 @@
     height: 80px;
     border-radius: 50%;
 }
+@media(max-width:768px){
+    .footer{
+        margin: 50px 70px;
+    }
+    .footer-top{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-bottom{
+        flex-direction: column-reverse;
+        display: flex;
+        margin-bottom: 50px;
+    }
+}
