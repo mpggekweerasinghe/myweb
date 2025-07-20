@@ -47,11 +47,11 @@ const Contact = () => {
           <div className="contact-details flex flex-col gap-4 text-gray-300 text-sm sm:text-base">
             <div className="contact-detail flex items-center gap-4">
               <img src={mail} alt="Email" className="w-6 sm:w-8 contact-icon" />
-              <p>gayaniweerasinghe@gmail.com</p>
+              <p>gayaniweerasinghe2001@gmail.com</p>
             </div>
             <div className="contact-detail flex items-center gap-4">
               <img src={call} alt="Phone" className="w-6 sm:w-8 contact-icon" />
-              <p>+94715330202</p>
+              <p>+94718519848</p>
             </div>
             <div className="contact-detail flex items-center gap-4">
               <img src={location} alt="Location" className="w-6 sm:w-8 contact-icon" />
