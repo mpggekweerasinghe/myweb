@@ -24,7 +24,7 @@ const Front = () => {
           Connect with me
         </a>
         <a href={cv} download="Gayani_Weerasinghe_CV.pdf" className="front-resume px-6 py-3 rounded-full border-2 border-white text-white text-sm sm:text-base font-medium hover:bg-gradient-to-r hover:from-[#cc0202] hover:to-[#2d0b53] hover:border-none transition duration-300">
-          Download cv
+          Download CV
         </a>
       </div>
     </div>
