@@ -83,4 +83,17 @@
         display: flex;
         margin-bottom: 50px;
     }
+
+    .footer-subscribe{
+        flex-direction: column-reverse;
+        display:flex;
+        margin: 80px 1px;
+    }
+
+    .footer-email-input{
+        flex-direction:row;
+        width: 210px;
+        display: flex;
+        margin: 100px -20px;
+    }
 }

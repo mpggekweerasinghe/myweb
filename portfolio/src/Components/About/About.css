@@ -35,7 +35,7 @@
 .about-section img{
     width: 230px;
     height: 230px;
-    border: 2px solid #2d0b53;
+    border: 2px solid #f8f6fa;
     border-radius: 50%;
 }
 
@@ -143,10 +143,11 @@
     }
     .about-qualifications{
         justify-content: space-between;
+        flex-direction: column;
+        margin-left: 4px;
+       
     }
-    .about-qualification{
-        gap: 10px;
-    }
+    
     .about-qualification h1{
         font-size: 34px;
         font-weight: 700;
