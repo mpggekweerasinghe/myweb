@@ -149,11 +149,17 @@
         font-size: 20px;
     }
     .contact-right textarea{
-        width: 95%;
+        width: 90%;
         font-size: 20px;
     }
     .contact-submit{
         font-size: 17px;
         padding: 15px 40px;
+    }
+
+    .contact-right{
+        align-items: center; /* Keep for centering child elements */
+        width: 100%; /* Ensure .contact-right takes full width */
+        max-width: 600px;
     }
 }
