@@ -34,7 +34,7 @@ const Navbar = () => {
           <a href="#services">Services</a> {menu === "services" && <img src={underline} alt="underline" className='underline'/>}
         </li>
         <li onClick={() => setMenu("work")}>
-          <a href="#work">Portfolio</a> {menu === "work" && <img src={underline} alt="underline" className='underline'/>}
+          <a href="#work">Projects</a> {menu === "work" && <img src={underline} alt="underline" className='underline'/>}
         </li>
         <li onClick={() => setMenu("contact")}>
           <a href="#contact">Contact</a> {menu === "contact" && <img src={underline} alt="underline" className='underline'/>}

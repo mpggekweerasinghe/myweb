@@ -1,24 +1,24 @@
-.footer{
+.footer {
     margin: 50px 170px;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.footer-top{
+.footer-top {
     display: flex;
     justify-content: space-between;
 }
-.footer-top-left p{
+.footer-top-left p {
     font-size: 15px;
     max-width: 400px;
 }
-.footer-top-right{
-    display:flex;
+.footer-top-right {
+    display: flex;
     align-items: center;
     gap: 30px;
-    margin-bottom: -110px;
+    margin-bottom: -65px; /* Removed negative margin to avoid overlap */
 }
-.footer-email-input{
+.footer-email-input {
     display: flex;
     gap: 10px;
     padding: 10px 20px;
@@ -26,7 +26,7 @@
     background: #32323B;
     padding-right: 50px;
 }
-.footer-email-input input{
+.footer-email-input input {
     outline: none;
     border: none;
     background: transparent;
@@ -34,66 +34,76 @@
     font-family: Outfit;
     font-size: 14px;
 }
-.footer-subscribe{
+.footer-subscribe {
     font-size: 17px;
     padding: 15px 40px;
     border-radius: 50px;
-    background:linear-gradient(270deg, #cc0202 0.16%, #2d0b53 75.06%);
+    background: linear-gradient(270deg, #cc0202 0.16%, #2d0b53 75.06%);
     cursor: pointer;
     transition: 0.3s;
 }
-.footer-bottom{
+.footer-bottom {
     display: flex;
     justify-content: space-between;
     font-size: 15px;
 }
-.footer-bottom-right{
+.footer-bottom-right {
     display: flex;
     gap: 50px;
     margin-bottom: 50px;
 }
-.footer-email-input:hover{
+.footer-email-input:hover {
     border: 2px solid white;
 }
-.footer-subscribe:hover{
+.footer-subscribe:hover {
     transform: scale(1.1);
     transition: 0.3s;
 }
-.footer-email-input img{
+.footer-email-input img {
     width: 60px;
     height: 30px;
     border-radius: 80%;
-
 }
-.footer-top-left img{
+.footer-top-left img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
 }
-@media(max-width:768px){
-    .footer{
-        margin: 50px 70px;
+
+@media (max-width: 768px) {
+    .footer {
+        margin: 50px 20px; /* Reduced margin for mobile */
     }
-    .footer-top{
+    .footer-top {
         flex-direction: column;
         gap: 50px;
     }
-    .footer-bottom{
-        flex-direction: column-reverse;
-        display: flex;
-        margin-bottom: 50px;
+    .footer-top-right {
+        flex-direction: column;
+        gap: 20px; /* Reduced gap for mobile (positive value) */
+        margin-bottom: 20px; /* Adjusted to avoid overlap */
+        align-items: flex-start; 
+        align-items: center;/* Align items to start for better mobile layout */
     }
-
-    .footer-subscribe{
-        flex-direction: column-reverse;
-        display:flex;
-        margin: 80px 1px;
+    .footer-email-input {
+        width: 60%; /* Full width for better fit on mobile */
+        margin: 0; /* Removed problematic margins */
+        padding: 10px 20px;
     }
-
-    .footer-email-input{
-        flex-direction:row;
-        width: 210px;
+    .footer-subscribe {
+        width: 25%; /* Full width for consistency */
+        text-align: center; /* Center text for better appearance */
+        margin: 0; /* Removed problematic margins */
+    }
+    .footer-bottom {
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin-bottom: 20px;
+    }
+    .footer-top-left {
         display: flex;
-        margin: 100px -20px;
+        flex-direction: column;
+        align-items: center; /* Center content within .footer-top-left */
+        text-align: center; /
     }
 }
